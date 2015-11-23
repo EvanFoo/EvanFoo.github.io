@@ -1,0 +1,53 @@
+<!DOCTYPE  html>
+	<head>
+		<link rel="stylesheet" type = "text/css" href="style.css">
+
+	</head>
+	<body>
+		<h1>
+			Solution
+		</h1>
+
+		<a href = "main.html"> Back to Main Page </a>
+
+		<button id="b1"> Hint </button>
+
+		<!-- It seems kind of silly, but this break needs to be here
+		or else the buton will jump to the bottom of the page -->
+
+		<br>
+
+		<img src = "" alt = "Hint" id = "img1" height = "1000" width = "700">
+
+		<script>
+
+			document.getElementById("b1").addEventListener("click", hint);
+				
+			var hints = ["4BE2P1Fall14.jpg", "koalahint.jpg", "koalahint2.jpg", "koalahint3.jpg"];
+			var i = 0;
+			var maxHints = 4;
+
+			function hint(){
+				document.getElementById("img1").src = hints[i];
+				i++;
+				if(i == maxHints)
+					i = 0; 
+			}
+		</script>
+
+		<h1> Solutions from the Community </h1>
+
+		<form>
+		Name:<br>
+		<input type="text" name="name">
+		<br>
+		Solution: <br>
+		<textarea id = "myTextArea"
+			rows = "3"
+			cols = "80"> Your solution here</textarea>
+
+		<button> Submit </button>
+		</form>
+
+	</body>
+</html>

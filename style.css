@@ -1,0 +1,25 @@
+body{
+	margin-left: 100px;
+}
+
+#question{
+	background-color: #b0c4de;
+	margin-bottom: 50px;
+}
+
+p{
+	margin-left: 100px;
+}
+
+#container{
+	border: 2px solid #000;
+	background-color: #ffffff;
+}
+
+div.absolute {
+	position: fixed;
+	top:80px;
+	right: 0;
+	width: 500px;
+	height: 1000px;
+}
